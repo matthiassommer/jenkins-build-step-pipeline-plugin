@@ -57,6 +57,8 @@ public class ProjectBuilder extends Builder implements SimpleBuildStep, Serializ
         if (this.project == null || this.project.isEmpty()) {
             throw new IllegalArgumentException("You did not select a project. Please go to your Jenkins job and select one from the dropdown.");
         }
+        
+        listener.getLogger().println("Workspace: " + workspace.getRemote());
 
         try {
             // Get a "channel" to the build machine and run the task there
