@@ -17,5 +17,15 @@ A restart of Jenkins might be needed.
 
 Afterwards, the plugin is listed under the *Installed* section at `https://<your-jenkins>/pluginManager/installed`.
 
+## Use in pipeline
+
+```
+node('pipeline_example') {     
+    stage('Run plugin') {
+        integrationPlugin project: 'some-project'
+    }
+}
+´´´
+
 # Support
 If this saved you some time, you may want to [support me](https://www.paypal.me/SommerMatthias/5).
