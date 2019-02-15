@@ -25,7 +25,7 @@ node('pipeline_example') {
         integrationPlugin project: 'some-project'
     }
 }
-´´´
+```
 
 # Support
 If this saved you some time, you may want to [support me](https://www.paypal.me/SommerMatthias/5).
