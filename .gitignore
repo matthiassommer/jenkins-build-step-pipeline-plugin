@@ -1,0 +1,7 @@
+*.exe
+.factorypath
+/.settings/
+/.vscode/
+
+/work/
+/target/
